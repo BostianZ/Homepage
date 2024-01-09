@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Nunito&family=Roboto&family=Rubik&family=Ubuntu&display=swap');
 
-/* :root {
-
-} */
+:root {
+    --main-color: #bc2525;
+    --white: white;
+}
 
 html {
     box-sizing: border-box;
@@ -28,8 +29,9 @@ body {
 }
 
 main {
-  display: grid;
-  max-width: 1000px;
+  margin: 0 auto;
+  max-width: 70vw;
+  padding: 72px 0;
 }
 
 .main-heading {
@@ -39,21 +41,56 @@ main {
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
+    grid-gap: 32px;
+    
 }
 
 .project-card {
     border: 1px solid black;
-    max-width: 300px;
-    margin-bottom: 24px;
     justify-self: center;
 }
 
 .project-card-img {
-    border: 1px solid red;
-    padding: 128px 48px;
+    background-color: var(--main-color);
+    min-height: 270px;
+}
+
+.project-card-info-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card-social {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-card-name {
+    flex: 1;
 }
 
 .project-card-info {
-    padding: 16px;
+    padding: 8px 16px 48px 16px;
+}
+
+.project-card-description {
+    margin-top: 12px;
+}
+
+footer {
+    background-color: var(--main-color);
+    padding: 64px 32px;
+    color: var(--white);
+    display: grid;
+    
+}
+
+.footer-img {
+    background-image: url("./imgs/fake.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
