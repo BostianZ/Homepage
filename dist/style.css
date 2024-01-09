@@ -20,3 +20,40 @@ body {
     margin: 0;
 }
 
+.header-social img,
+.project-card-social img,
+.contact-socials img,
+.contact-info {
+    max-width: 30px;
+}
+
+main {
+  display: grid;
+  max-width: 1000px;
+}
+
+.main-heading {
+    /* align-self: flex-start; */
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+.project-card {
+    border: 1px solid black;
+    max-width: 300px;
+    margin-bottom: 24px;
+    justify-self: center;
+}
+
+.project-card-img {
+    border: 1px solid red;
+    padding: 128px 48px;
+}
+
+.project-card-info {
+    padding: 16px;
+}
